@@ -1,22 +1,11 @@
 # Paramount Petroleum - Default Theme
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/17758869-2b98-4ae6-87f3-6206ac5d8578/deploy-status)](https://app.netlify.com/sites/goldcoders/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ed04129b-0b70-4c6c-9a4c-ff49431e9d47/deploy-status)](https://app.netlify.com/sites/paramount-petroleum/deploys)
 
 ## Requirements
 
--   Paramount Petroleum Manager v1.0.0
+-   Thriftshop Site Manager v1.0.0
 
-## Using Checkout with Paymongo
-
--   You  need to be logged inside netlify account, go to https://app.netlify.com/sites/${SITE_NAME}/settings/deploys#environment , replace the SITE_NAME with your own
-
-Add the Following, Create NEW VARIABLE
-```
-PAYMONGO_EMAIL
-PAYMONGO_PASS
-PAYMONGO_LIVEMODE
-```
-set `livemode` to `true`
 
 ## Using Custom Domain Name
 
