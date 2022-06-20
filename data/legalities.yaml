@@ -1,0 +1,20 @@
+business_name: PARAMOUNT PETROLEUM AND INT'L INDUSTRIES CORP.
+owner: CAPT. PEDRO U. BERIÑA JR
+business_line: Wholesale of Solid, Liquid, and Gaseous Fuels.
+business_address: 2nd Flr. GLC Bldg. T.M. Kalaw St. cor Mabini St., Ermita Manila Philippines
+certificates:
+  - type: file
+    url: /images/sec-reg.jpeg
+    name: SEC Certificate
+  - type: file
+    name: Bureau of Customs Certificate
+    url: /images/boc-import-permit-2022.pdf
+  - type: file
+    name: Depart of Energy Registration
+    url: /images/doe-registration.pdf
+  - type: image
+    name: Mayors Permit
+    url: /images/mayor_s-permit-2021.jpg
+  - type: file
+    name: BIR
+    url: /images/bir.pdf

@@ -1,0 +1,25 @@
+enableEmoji = true
+enableRobotsTXT = true
+title = "Paramount Petroleum and International Industries Corporation"
+baseURL = "https://paramountpetroleum.ph"
+googleAnalytics = ""
+disqusShortname = "paramountpetroleum"
+paginate = 9
+languageCode = "en-us"
+summaryLength = "10"
+ignoreErrors = ["error-missing-instagram-accesstoken", "error-remote-getjson"]
+
+[permalinks]
+blogs = "/blog/:slug/"
+products = "/products/:slug/"
+pages = "/:slug"
+
+[author]
+homepage = "https://github.com/goldcoders"
+name = "Support"
+avatar = "/images/avataaars.svg"
+
+[build]
+noJSConfigInAssets = false
+useResourceCacheWhen = "fallback"
+writeStats = true

@@ -1,0 +1,20 @@
+[assets]
+  dir = ':resourceDir/_gen'
+  maxAge = -1
+
+[getcsv]
+  dir = ':cacheDir/:project'
+  maxAge = -1
+
+[getjson]
+  dir = ':cacheDir/:project'
+  # this is a bit of a hack, but it's the only way to get the cache to bust on changes on strapi api
+  maxAge = 0
+
+[images]
+  dir = ':resourceDir/_gen'
+  maxAge = -1
+
+[modules]
+  dir = ':cacheDir/modules'
+  maxAge = -1

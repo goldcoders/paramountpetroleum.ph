@@ -1,0 +1,40 @@
+{{ if .Site.IsServer }}
+{{ if and (eq $.Site.Data.fb_chat_plugin.enable true) $.Site.Data.fb_chat_plugin.page_id -}}
+<div class="fixed bottom-0 right-0 z-50 flex items-center justify-center w-12 h-12 mb-12 mr-10 text-sm text-gray-700 uppercase bg-green-400 rounded-full">
+    <span class="block px-1">CHAT</span>
+</div>
+{{end}}
+{{else}}
+{{/* We Need to Show This Only When We Are Running On Production */}}
+{{ if and (eq $.Site.Data.fb_chat_plugin.enable true) $.Site.Data.fb_chat_plugin.page_id -}}
+<!-- Messenger Chat Plugin Code -->
+<div id="fb-root"></div>
+
+<!-- Your Chat Plugin code -->
+<div id="fb-customer-chat" class="fb-customerchat">
+</div>
+
+<script>
+  var chatbox = document.getElementById('fb-customer-chat');
+  chatbox.setAttribute("page_id", "{{$.Site.Data.fb_chat_plugin.page_id}}");
+  chatbox.setAttribute("attribution", "biz_inbox");
+
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v14.0'
+    });
+  };
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+{{- end -}}
+
+{{ end }}
+

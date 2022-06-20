@@ -1,0 +1,44 @@
+{{ define "main" }}
+{{ if (and ( (isset .Params "featured_image") ) ( not (eq .Params.featured_image "" )) ) }}
+{{- partial "cover_photo" . -}}
+{{end}}
+<div class="px-4 py-10 overflow-hidden sm:px-6 lg:px-8">
+  <div class="relative max-w-xl mx-auto">
+      {{ if (or ( not (isset .Params "featured_image") )  (eq .Params.featured_image "" ) ) }}
+      <h1
+        class="text-6xl font-extrabold leading-9 tracking-tight text-center text-primary sm:text-4xl sm:leading-10"
+      >
+      {{ .Page.Params.title }}
+      </h1>
+      {{end}}
+    <p class="mt-4 text-2xl leading-6 text-neutral">
+        {{- .Page.Params.Description -}}
+    </p>
+    <!-- Form Template -->
+    {{.Render "contact/form"}}
+  </div>
+</div>
+<div class="px-4 py-16 mx-auto max-w-7xl sm:px-6 lg:py-24 lg:px-8">
+  <div class="grid grid-cols-1 gap-16">
+    {{$mobiles := len $.Page.Params.mobiles.mobiles}}
+    {{if gt $mobiles 0}}
+    {{.Render "contact/mobiles"}}
+    {{end}}
+    <div class="border-t-2 border-gray-100"></div>
+    {{$locations := len $.Page.Params.pick_up_locations.locations}}
+    {{if gt $locations 0}}
+    {{.Render "contact/locations"}}
+    {{end}}
+  </div>
+</div>
+{{ end }}
+
+{{ define "scripts" }}
+{{ if .Page.Params.showsearch }}
+<script src="/js/fuse.js" async defer></script>
+{{end}}
+{{ if and (.Page.Params.form.recaptcha.enable) (ne $.Site.BaseURL "http://localhost:1313/") -}}
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+{{end}}
+{{- partial "fb-chat-plugin.html" . -}}
+{{end}}

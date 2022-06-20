@@ -1,0 +1,39 @@
+{
+  "name": "cms",
+  "version": "1.0.0",
+  "repository": "git@github.com:goldcoders/cms.git",
+  "author": "Goldcoders <goldcoders@protonmail.com>",
+  "license": "MIT",
+  "browserslist": [
+    "last 1 chrome versions"
+  ],
+  "scripts": {
+    "dev": "snowpack dev",
+    "local-server": "netlify-cms-proxy-server",
+    "cms": "run-p local-server dev",
+    "build": "cross-env NODE_ENV=production node --require dotenv/config ./esbuild.js"
+  },
+  "dependencies": {
+    "@types/node": "^15.12.2",
+    "netlify-cms": "^2.10.138",
+    "netlify-cms-app": "^2.15.18",
+    "netlify-cms-proxy-server": "^1.3.18",
+    "typescript": "^4.3.2"
+  },
+  "devDependencies": {
+    "@snowpack/plugin-dotenv": "^2.1.0",
+    "@snowpack/plugin-typescript": "^1.2.1",
+    "@typescript-eslint/eslint-plugin": "^4.33.0",
+    "@typescript-eslint/parser": "^4.33.0",
+    "cross-env": "^7.0.3",
+    "dotenv": "^10.0.0",
+    "esbuild": "^0.12.8",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "npm-run-all": "^4.1.5",
+    "snowpack": "^3.5.6"
+  }
+}

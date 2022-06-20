@@ -1,0 +1,37 @@
+{{ define "main" }}
+{{ if (and ( (isset .Params "featured_image") ) ( not (eq .Params.featured_image "" )) ) }}
+{{- partial "cover_photo" . -}}
+{{end}}
+{{ if (or ( not (isset .Params "featured_image") )  (eq .Params.featured_image "" ) ) }}
+<div class="px-4 py-10 overflow-hidden sm:px-6 lg:px-8">
+  <div class="relative mx-auto max-w-7xl">
+        <h1
+        class="mt-10 text-2xl font-extrabold leading-9 tracking-tight text-center text-primary sm:text-4xl sm:leading-10"
+        >
+        {{- .Page.Params.title -}}
+        </h1>
+
+  </div>
+</div>
+{{end}}
+<div class="relative px-4 pt-16 pb-20 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
+    <div class="relative mx-auto max-w-7xl">
+        {{if eq .Section "blog"}}
+        {{ partial "post" . }}
+        {{end}}
+        {{if eq .Section "products"}}
+        {{ partial "products" . }}
+        {{end}}
+        {{if eq $.Page.Params.showpagination true}}
+        {{ partial "pagination" . }}
+        {{end}}
+    </div>
+</div>
+{{ end }}
+
+{{ define "scripts" }}
+{{ if .Page.Params.showsearch }}
+<script src="/js/fuse.js" async defer></script>
+{{end}}
+{{- partial "fb-chat-plugin.html" . -}}
+{{end}}

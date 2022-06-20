@@ -1,0 +1,48 @@
+[build]
+  publish = "public"
+  functions = "functions"
+  # command = "sed -i \"s|SITE_URL|${HUGO_BASEURL}|g\" netlify.toml && yarn prod"
+  #command = "yarn prod"
+  command = "yarn hugo-build"
+# command: ntl dev
+[dev]
+command = "hugo server --disableFastRender"
+targetPort = 1313
+framework = "#custom"
+port = 3000
+[[plugins]]
+  package = "netlify-plugin-hugo-cache-resources"
+
+	[plugins.inputs]
+	# If it should show more verbose logs (optional, default = true)
+	debug = false
+
+# Initial .env set at runtime, can be overriden , if deploy via cli
+[template.environment]
+  # ENV Variables can be used directly only on a command
+  SNOWPACK_PUBLIC_DOMAIN  = "Type Domain eg: goldcoders.dev"
+
+[build.environment]
+  # hugo env
+  HUGO_VERSION = "0.88.1"
+  HUGO_ENABLEGITINFO = "true"
+  SNOWPACK_PUBLIC_BACKEND_TYPE="git-gateway"
+  SNOWPACK_PUBLIC_BRANCH="main"
+  SNOWPACK_PUBLIC_BACKEND="true"
+  SNOWPACK_PUBLIC_SHOW_PREVIEW_LINKS="true"
+  SNOWPACK_PUBLIC_MEDIA_FOLDER="static/images"
+  SNOWPACK_PUBLIC_LOGO_URL="/images/logo.svg"
+  SNOWPACK_PUBLIC_PUBLIC_FOLDER="/images"
+
+[context.production]
+  # needed to be able to deploy in netlify using git hooks
+  # set to theme if deploying via netlify-cli, if by git hooks retain the line below
+  #environment = {  SNOWPACK_PUBLIC_DOMAIN = "goldcoders.dev" }
+
+[context.dev]
+  # locally build using: ntl build --context=dev
+  # environment = { HUGO_THEME = "goldcoders" }
+
+[context.deploy-preview]
+  # locally build using: ntl build --context=deploy-preview
+  command = "hugo --gc --minify -b $DEPLOY_PRIME_URL --buildFuture"

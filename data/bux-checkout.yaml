@@ -1,0 +1,17 @@
+api_key: ''
+base_url: ''
+sand_box_url: 'https://api.bux.ph/v1/api/sandbox/open/checkout/'
+production_url: 'https://api.bux.ph/v1/api/open/checkout/'
+client_id: ''
+# Parameters needed to be passed
+# req_id - Our Order ID from orders table in supabase
+# client_id
+# amount
+# description
+# email - Supabase User Account email
+# contact - User meta data mobile no.
+# name - User meta data name
+# notification_url - deploy the notify_api 1 Click Deploy
+# redirecT_url - /thank-you , create this page
+# param1 - any text
+# param2 - any text

@@ -1,0 +1,6 @@
+title: Shopping Cart
+tax_rate: 0
+shipping_fee: 0
+empty_cart_img: /images/start-shopping.svg
+empty_cart_error_msg: Whoops!
+empty_cart_label: Cart is Empty

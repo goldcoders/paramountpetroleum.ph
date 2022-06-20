@@ -1,0 +1,41 @@
+github_user = "goldcoders"
+mainSections = ["blog", "products"]
+copyright = "Copyright © 2022, PARAMOUNT PETROLEUM AND INT'L INDUSTRIES CORP."
+github_banner = true
+github_repo = "https://github.com/thrift-shop-site/theme"
+favicon = "/images/pp_asset-1-0.1x.png"
+description = "The Most Affordable Ecommerce Site For Filipino Online Seller Startups"
+
+[gtm]
+enable = false
+id = ""
+
+[navbar]
+color = "coolGray"
+shade = "900"
+
+[logo]
+image = "/images/logo.svg"
+height = "10"
+
+[brand]
+enable = true
+name = "Paramount"
+font = "steel"
+color = "brand"
+shade = ""
+
+[tag]
+name = "PETROLEUM"
+font = "steel"
+color = "white"
+shade = ""
+
+[cover_photo]
+color = "gray"
+shade = "50"
+font = "aguafina"
+
+[placeholder]
+cover_photo = "https://cdn.pixabay.com/photo/2015/03/26/09/40/business-suit-690048_960_720.jpg"
+post = "https://via.placeholder.com/760x450"

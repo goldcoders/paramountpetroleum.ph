@@ -1,0 +1,21 @@
+{{ define "main"}}
+<div class="container flex items-center justify-center flex-1 min-h-screen mx-auto">
+  <div class="w-full max-w-lg">
+    <div class="leading-loose">
+      <div class="max-w-xl p-10 m-4 bg-white rounded shadow-xl">
+        <p class="text-xl font-bold text-center text-gray-800">404 - Not Found</p>
+         <button class="px-4 py-1 ml-24 font-light tracking-wider text-white bg-gray-900 rounded" type="submit">
+             <a href="/">Take Me Back To Home</a>
+         </button>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}
+
+{{ define "scripts" }}
+{{ if .Page.Params.showsearch }}
+<script src="/js/fuse.js" async defer></script>
+{{end}}
+{{- partial "fb-chat-plugin.html" . -}}
+{{end}}

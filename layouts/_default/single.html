@@ -1,0 +1,33 @@
+{{ define "main" }}
+{{ if (and ( (isset .Params "featured_image") ) ( not (eq .Params.featured_image "" )) ) }}
+{{- partial "cover_photo" . -}}
+{{end}}
+{{ if (or ( not (isset .Params "featured_image") )  (eq .Params.featured_image "" ) ) }}
+<div class="px-4 py-10 overflow-hidden sm:px-6 lg:px-8">
+  <div class="relative mx-auto max-w-7xl">
+        <h1
+        class="mt-10 text-2xl font-extrabold leading-9 tracking-tight text-center text-primary sm:text-4xl sm:leading-10"
+        >
+        {{- .Page.Params.title -}}
+        </h1>
+
+  </div>
+</div>
+{{end}}
+    {{/* Properties Available https://gohugo.io/content-management/page-resources/#properties */}}
+    {{/*  {{ $images := .Resources.ByType "image" }}
+    {{range $images}}
+    <img src="{{ .RelPermalink }}">
+    {{end}}  */}}
+<article class="px-5 mx-auto prose-sm prose sm:prose-md md:prose-lg lg:prose-2xl sm:px-0">
+    {{ .Content }}
+</article>
+{{- partial "related.html" . -}}
+{{ end }}
+
+{{ define "scripts" }}
+{{ if $.Page.Params.showsearch }}
+<script src="/js/fuse.js"></script>
+{{end}}
+{{- partial "fb-chat-plugin.html" . -}}
+{{end}}
