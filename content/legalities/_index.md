@@ -1,8 +1,8 @@
 ---
 index: true
 draft: false
-showcart: true
-showsearch: true
+showcart: false
+showsearch: false
 title: Legalities
 description: >+
   Our business is transparent to the public , All public documents will be

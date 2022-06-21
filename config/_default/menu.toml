@@ -34,11 +34,11 @@ name = "Cookie Policy"
 weight = 4
 
 [[footer]]
-URL = "/privacy/"
+URL = "/privacy-policy/"
 name = "Privacy Policy"
 weight = 3
 
 [[footer]]
-URL = "/tos/"
+URL = "/terms-and-conditions/"
 name = "Terms & Conditions"
 weight = 2

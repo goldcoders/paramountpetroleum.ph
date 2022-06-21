@@ -2,8 +2,8 @@
 index: false
 draft: false
 date: 2022-06-19T20:49:24.439Z
-showcart: true
-showsearch: true
+showcart: false
+showsearch: false
 title: Disclaimer
 slug: disclaimer
 description: Site Disclaimer

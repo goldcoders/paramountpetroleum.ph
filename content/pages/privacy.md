@@ -1,11 +1,11 @@
 ---
 index: false
 draft: false
-date: 2022-06-19T20:49:51.386Z
-showcart: true
-showsearch: true
+date: 2022-06-21T00:38:37.184Z
+showcart: false
+showsearch: false
 title: Privacy Policy
-slug: privacy
+slug: privacy-policy
 description: PARAMOUNT PETROLEUM AND INT'L INDUSTRIES CORP. - Privacy Policy
 featured_image: /images/privacy-banner.jpg
 keywords:

@@ -1,7 +1,7 @@
 ---
-index: true
 draft: false
 showcontact: true
+index: true
 showcart: false
 showsearch: false
 custom:
@@ -17,13 +17,13 @@ cover_photo:
   shade: ""
   font: aguafina
 form:
-  action: https://docs.google.com/forms/u/1/d/e/1FAIpQLSf88ng1DrsWRw5nMEgTXqLA-GBIktjphzQ_GWupVjufhyfTyg/formResponse?embedded=true
+  action: https://docs.google.com/forms/u/4/d/e/1FAIpQLScwOVTvhzsPnaT-NweTHKhMT15Ja3m06uL7d7bWZXPF5WGQsw/formResponse?embedded=true
   method: POST
   button:
     text: Submit
   recaptcha:
     enable: true
-    siteKey: 6LfOIrYZAAAAAHzZKPjccgmXDq2i3mc5Kuag883f
+    siteKey: 6Lf5bYYgAAAAANQkEOJZGw7In3rsYHu7hfrOilhD
   agreement:
     enable: true
     text: I have read and agreed to
@@ -33,7 +33,7 @@ form:
       - name: cookie policy
         link: "#cookie"
   fields:
-    - name: entry.1962674402
+    - name: entry.2131373238
       label: Name
       type: text
       value: name
@@ -52,7 +52,7 @@ form:
         required: true
       tag: input
       placeholder: juandelacruz@gmail.com
-    - name: entry.1715356000
+    - name: entry.1118811649
       label: Contact No.
       type: text
       value: mobile
@@ -62,7 +62,7 @@ form:
         title: Must Start With +639XXXXXXXXXX or 09XXXXXXXXXX
       tag: input
       placeholder: "+63915123456789"
-    - name: entry.1318919415
+    - name: entry.1198593499
       label: Message
       type: text
       value: message

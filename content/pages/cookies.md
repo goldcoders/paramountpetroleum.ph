@@ -2,11 +2,11 @@
 index: false
 draft: false
 date: 2022-06-19T20:49:18.423Z
-showcart: true
-showsearch: true
+showcart: false
+showsearch: false
 title: Cookies
 slug: cookies
-description:  Cookie Site Policy
+description: Cookie Site Policy
 featured_image: /images/cookie-banner.jpg
 keywords:
   - cookies
@@ -79,4 +79,4 @@ You can learn more about cookies in the "What Are Cookies" article.
 ### Contact Us
 If you have any questions about this Cookies Policy, You can contact us:
 
-By email: support@thrifshop.site
+By email: support@paramountpetroleum.ph

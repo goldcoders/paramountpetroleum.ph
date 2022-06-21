@@ -3,9 +3,9 @@ index: false
 draft: false
 date: 2022-06-19T20:49:37.718Z
 showcart: false
-showsearch: true
-title: Terms and Condition
-slug: tos
+showsearch: false
+title: Terms and Conditions
+slug: terms-and-conditions
 description: Terms and Condition
 featured_image: /images/tos-banner.jpg
 keywords:

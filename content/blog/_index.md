@@ -1,8 +1,8 @@
 ---
 index: true
 draft: true
-showcart: true
-showsearch: true
+showcart: false
+showsearch: false
 showpagination: true
 title: Blog
 description: Latest News From Our Blog
