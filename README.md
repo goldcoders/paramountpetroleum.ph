@@ -1,5 +1,11 @@
 # Paramount Petroleum - Default Theme
 
+Install Hugo on Codespace
+
+1. `cd /opt/hugo/lts`
+
+1. `curl -L https://github.com/gohugoio/hugo/releases/download/v0.88.1/hugo_extended_0.88.1_Linux-64bit.tar.gz | tar xvz`
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/ed04129b-0b70-4c6c-9a4c-ff49431e9d47/deploy-status)](https://app.netlify.com/sites/paramount-petroleum/deploys)
 
 ## Requirements
