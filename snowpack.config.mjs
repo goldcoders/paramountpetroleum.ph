@@ -3,7 +3,7 @@ export default {
   mount: {
     'static/admin': { url: '/', static: true },
     'cms/src': { url: '/dist' },
-  }, 
+  },
   plugins: [
     '@snowpack/plugin-dotenv',
     [
@@ -16,7 +16,7 @@ export default {
   ],
   devOptions:{
    hmr: true,
-   open: 'chrome',
+  //  open: 'chrome',
    port: 1234,
    output: 'stream',
    hmrErrorOverlay: true,
