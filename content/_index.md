@@ -1,14 +1,14 @@
 ---
-featured_image: /images/fuel_station.svg
-showsearch: false
-author:
-  name: Goldcoders
-  avatar: https://avatars.dicebear.com/api/avataaars/richkid.svg
 index: true
 title: Paramount Petroleum and International Industries Corporation
 description: Get started now building unlimited no. of sites that can be quickly
   deploy at a click of button. Pay once use forever!
+featured_image: /images/fuel_station.svg
 date: 2022-06-19T22:40:12.245Z
+showsearch: false
+author:
+  name: Goldcoders
+  avatar: https://avatars.dicebear.com/api/avataaars/richkid.svg
 showcart: false
 sections:
   - logos:
@@ -135,10 +135,10 @@ sections:
         spanLG: 2
         span: 1
         name: Jhona Evangelista
-        work: Online Marketer
+        work: Sales Manager
         role: VP Marketing
         image:
-          url: /images/avatar.svg
+          url: /images/sales_manager.jpg
           alt: contact
         email: littleshaolin19@gmail.com
     gap: "8"
